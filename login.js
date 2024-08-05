@@ -14,6 +14,11 @@ form.addEventListener('submit', (event) => {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
+    // Simulating SQL Injection vulnerability
+    const query = `SELECT * FROM users WHERE username = '${username}' AND password = '${password}'`;
+    console.log(query);
+
+    // Mock database query check
     if (users.has(username) && users.get(username) === password) {
         message.textContent = 'Login successful!';
     } else {
