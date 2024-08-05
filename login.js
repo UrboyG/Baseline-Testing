@@ -1,3 +1,4 @@
+//This JS file includes XXS and SQLinjection vuln for baseline testing
 const form = document.getElementById('loginForm');
 const message = document.getElementById('message');
 const echo = document.getElementById('echo');
