@@ -28,3 +28,4 @@ form.addEventListener('submit', (event) => {
     // Vulnerable echo: directly outputting user input
     echo.textContent = `Welcome, ${username}!`;
 });
+
